@@ -11,23 +11,30 @@
                 </div>
 
                 <div class="navbar-menu">
-
                     <div class="navbar-end">
-                        <a class="a-menu is-size-7 navbar-item">
-                            <router-link to="/">
+                        <router-link to="/" active-class="is-active">
+                            <a class="a-menu is-size-7 navbar-item">
                                 home
-                            </router-link>
-                        </a>
-                        <a class="a-menu is-size-7 navbar-item">
-                            <router-link to="/contact">
+                            </a>
+                        </router-link>
+
+                        <router-link to="/howto" active-class="is-active">
+                            <a class="a-menu is-size-7 navbar-item">
+                                how to use
+                            </a>
+                        </router-link>
+
+                        <router-link to="/contact" active-class="is-active">
+                            <a class="a-menu is-size-7 navbar-item">
                                 contact
-                            </router-link>
-                        </a>
-                        <a class="a-menu is-size-7 navbar-item">
-                            <router-link to="/login">
+                            </a>
+                        </router-link>
+
+                        <router-link to="/login" active-class="is-active">
+                            <a class="a-menu is-size-7 navbar-item">
                                 log in
-                            </router-link>
-                        </a>
+                            </a>
+                        </router-link>
                     </div>
                 </div>
                 <span class="navbar-burger burger" data-target="navbarMenuHeroA">

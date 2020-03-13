@@ -13,11 +13,13 @@
                         We make resumes easy
                     </h1>
                     <p class="has-text-green">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Easily create a global identifier where employers and recruiters can discover your resume. No more filling out endless forms & applications when you can simply provide your most up to date resume; with us.
                     </p>
-                    <button class="btn has-mustard-bg is-size-7 a-menu">
-                        try it now
-                    </button>
+                    <router-link to="/register">
+                        <button class="btn has-mustard-bg is-size-7 a-menu">
+                            try it now
+                        </button>
+                    </router-link>
                 </div>
             </div>
         </section>
@@ -40,7 +42,7 @@
                                         <p>
                                             <strong>Some guy</strong> <small>@someguy</small> <small>5m</small>
                                             <br>
-                                            Frist time I used @fancyapp, was like the first time I listened to The Beatles. Christmas came early, I guess.
+                                            First time I used @globalcv, was like the first time I listened to The Beatles. Christmas came early, I guess.
                                         </p>
                                     </div>
                                     <nav class="level is-mobile">
@@ -79,7 +81,7 @@
                                         <p>
                                             <strong>Some girl</strong> <small>@somegirl</small> <small>5m</small>
                                             <br>
-                                            Fancy App is the answer to all your problems, all praise the #fancyappgod!
+                                            globalcv is the answer to all your problems, all praise #globalcv!
                                         </p>
                                     </div>
                                     <nav class="level is-mobile">
@@ -106,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="is-size-7 has-text-centered">See more at #globalcv</p>
+                <p class="is-size-7 has-text-centered">See more at <a href="https://twitter.com/search?q=globalcv&src=typed_query">#globalcv</a></p>
             </div>
         </section>
         <!-- END Twitter Feed -->
@@ -114,69 +116,69 @@
         <!-- Features -->
         <section id="features" class="section has-mustard-bg">
             <div class="container">
-                <div class="columns">
-
-                    <div class="column">
-                        <img class="feature-img" src="../assets/img/feature2.png" alt="feature" />
-                    </div>
-                    <div class="column">
-                        <h3 class="is-size-3">
-                            One resume. available Everywhere</h3>
-                        <p class="has-text-green paragraph">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="container">
                 <div class="columns reverse-row-order">
-
-                    <div class="column">
-                        <h3 class="is-size-3">
-                            Privacy focused</h3>
-                        <p class="has-text-green paragraph">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                        </p>
-                    </div>
-                    <div class="column">
-                        <img class="feature-img" src="../assets/img/feature3.png" alt="feature" />
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="columns">
                     <div class="column">
                         <h3 class="is-size-3">
                             Open Source, all the way
                         </h3>
                         <p class="has-text-green paragraph">
-                            The world runs on open source and so do we here at globalcv. We release all of the code
+                            The world runs on open source and so does globalcv. We release all of the code our service and website runs on which can be found on our GitHub.
                         </p>
                     </div>
                     <div class="column">
-                        <img class="feature-img" src="../assets/img/feature1.png" alt="feature" />
+                        <img class="feature-img" src="../assets/img/feature1.png" alt="open source software" />
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <img class="feature-img" src="../assets/img/feature2.png" alt="global resume identifier" />
+                    </div>
+                    <div class="column">
+                        <h3 class="is-size-3">
+                            Upload once. Available everywhere</h3>
+                        <p class="has-text-green paragraph">
+                            Ditch the days of fumbling over endless pages of forms when all the information an employer needs is available on your resume. We parse your resume and provide the relevant data to each employer you choose.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="is-size-3">
+                            Privacy focused</h3>
+                        <p class="has-text-green paragraph">
+                            You're trusting us with important & private information and we understand that. We only make your data available to potential employers who requested it.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <img class="feature-img" src="../assets/img/feature3.png" alt="privacy focused" />
                     </div>
                 </div>
             </div>
         </section>
         <!-- END Features -->
+
         <!-- Newsletter -->
         <section id="newsletter" class="section">
             <div class="container">
                 <h3 class="is-size-3">
                     Stay in touch</h3>
                 <p class="has-text-green">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stay up to date with any news related to globalcv. We don't send spam or sell your information. Or bite.
                 </p>
                 <div class="field newsletter-field">
                     <div class="control">
-                        <input class="input newsletter-input" type="text" placeholder="mail@example.com">
+                        <input class="input newsletter-input" type="text" placeholder="svandy@gmail.com">
                     </div>
                 </div>
-                <button class="btn has-mustard-bg is-size-7 a-menu">
-                    sign up now
-                </button>
+                <router-link to="">
+                    <button class="btn has-mustard-bg is-size-7 a-menu">
+                        subscribe
+                    </button>
+                </router-link>
             </div>
         </section>
         <!-- END Newsletter -->
@@ -189,8 +191,8 @@
 </template>
 
 <script>
-    import gcv_header from "@/components/Header"
-    import gcv_footer from "@/components/Footer"
+    import gcv_header from "@/views/Header"
+    import gcv_footer from "@/views/Footer"
 
     export default {
       name: 'Home',

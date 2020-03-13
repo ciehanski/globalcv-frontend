@@ -12,10 +12,10 @@
 
                     <br><br>
 
-                    <h3 class="has-text-green is-size-1 is-size-3-mobile">
+                    <h2 class="has-text-green is-size-2 is-size-4-mobile">
                         Contact us
-                    </h3>
-
+                    </h2>
+                    <hr>
                     <!-- First Name -->
                     <div class="field">
                         <label class="label" for="first_name">First Name:</label>
@@ -48,11 +48,11 @@
                         </div>
                     </div>
 
-                    <!-- Submit -->
+                    <!-- Send -->
                     <div class="field">
-                        <label class="label" for="submit"></label>
+                        <label class="label" for="send"></label>
                         <div class="control">
-                            <button id="submit" class="btn has-mustard-bg is-size-7 a-menu">Submit</button>
+                            <button id="send" class="btn has-mustard-bg is-size-7 a-menu">Send</button>
                         </div>
                     </div>
 
@@ -68,8 +68,8 @@
 </template>
 
 <script>
-    import gcv_header from "@/components/Header"
-    import gcv_footer from "@/components/Footer"
+    import gcv_header from "@/views/Header"
+    import gcv_footer from "@/views/Footer"
 
     export default {
         name: "Contact",

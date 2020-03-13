@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
@@ -13,17 +13,17 @@ export default new Vuex.Store({
     },
     mutations: {
         authenticateUser (state, user) {
-            state.userId = user.userId
-            state.username = user.username
-            state.email = user.email
-            state.emailconfirmed = user.emailconfirmed
+            state.userId = user.userId;
+            state.username = user.username;
+            state.email = user.email;
+            state.emailconfirmed = user.emailconfirmed;
             state.rememberMe = user.rememberMe
         },
         logoutUser (state) {
-            state.userId = null
-            state.username = null
-            state.email = null
-            state.emailconfirmed = null
+            state.userId = null;
+            state.username = null;
+            state.email = null;
+            state.emailconfirmed = null;
             state.rememberMe = null
         }
     },
@@ -47,8 +47,8 @@ export default new Vuex.Store({
                 email: authData.user.email,
                 emailconfirmed: authData.user.emailconfirmed,
                 rememberMe: remember
-            })
-            console.log(remember)
+            });
+            console.log(remember);
             // Set the session expiration time to 15 mins
             dispatch('setSessionExpirationTimer')
         },
@@ -60,9 +60,9 @@ export default new Vuex.Store({
             }).then(function (response) {
                 return response.json()
             }).then(function (data) {
-                console.log(data.message)
+                console.log(data.message);
                 // Mutate the state's values
-                commit('logoutUser')
+                commit('logoutUser');
                 // Remove all localStorage items
                 if (localStorage.getItem('lastFilterSelected')) {
                     localStorage.removeItem('lastFilterSelected')
@@ -73,22 +73,22 @@ export default new Vuex.Store({
         },
         tryAutoLogin ({ commit, dispatch }) {
             function getCookieValue (name) {
-                var cookie = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')
+                let cookie = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
                 return cookie ? cookie.pop() : ''
             }
-            var userCookie = getCookieValue('user')
+            let userCookie = getCookieValue('user');
             if (userCookie) {
                 // Grab just the body (middle section) of the JWT
-                const tokenBody = userCookie.split(/\./)[1]
+                const tokenBody = userCookie.split(/\./)[1];
                 // Un base64 it (using the Java 8 Base64 class)
-                const parsedToken = JSON.parse(atob(tokenBody))
+                const parsedToken = JSON.parse(atob(tokenBody));
                 // Mutate the state's values
                 commit('authenticateUser', {
                     userId: parsedToken.sub,
                     username: parsedToken.username,
                     email: parsedToken.email,
                     emailconfirmed: parsedToken.emailconfirmed
-                })
+                });
                 // Set the session expiration time from NOW to 15 mins
                 dispatch('setSessionExpirationTimer')
             }
@@ -103,7 +103,7 @@ export default new Vuex.Store({
                 // We got a response from the API
                 console.log(data)
             }).catch(err => {
-                console.error(err)
+                console.error(err);
                 dispatch('logout')
             })
         }

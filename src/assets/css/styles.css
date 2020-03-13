@@ -234,9 +234,18 @@ Newsletter
 Footer
 */
 #footer p {
-    padding: 20px;
+    padding: 10px;
 }
 
 #footer a {
     color: #FFFFFF !important;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
